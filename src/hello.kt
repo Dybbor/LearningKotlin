@@ -9,8 +9,9 @@ fun main(args : Array<String>) {
     //Status player
     printPlayerStatus(auraColor, isBlessed, name, healthStatus)
     castFireball();
+    println(sum(b=2))
 }
-
+private fun sum (a:Int = 2, b:Int =3 ):Int =  a+b
 private fun printPlayerStatus(auraColor: String, isBlessed: Boolean, name: String, healthStatus: String) {
     println("(Aura: $auraColor) " + "Blessed: ${if (isBlessed) "YES" else "NO"}")
     println("$name $healthStatus")
